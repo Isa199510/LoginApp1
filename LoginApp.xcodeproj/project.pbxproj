@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F46063D22916770100F15CDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46063D12916770100F15CDF /* AppDelegate.swift */; };
 		F46063D42916770100F15CDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46063D32916770100F15CDF /* SceneDelegate.swift */; };
-		F46063D62916770100F15CDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46063D52916770100F15CDF /* ViewController.swift */; };
+		F46063D62916770100F15CDF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46063D52916770100F15CDF /* LoginViewController.swift */; };
 		F46063D92916770100F15CDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46063D72916770100F15CDF /* Main.storyboard */; };
 		F46063DB2916770400F15CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46063DA2916770400F15CDF /* Assets.xcassets */; };
 		F46063DE2916770400F15CDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46063DC2916770400F15CDF /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		F46063CE2916770100F15CDF /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46063D12916770100F15CDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F46063D32916770100F15CDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F46063D52916770100F15CDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F46063D52916770100F15CDF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F46063D82916770100F15CDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F46063DA2916770400F15CDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F46063DD2916770400F15CDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,39 @@
 		F46063D02916770100F15CDF /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				F46063D12916770100F15CDF /* AppDelegate.swift */,
-				F46063D32916770100F15CDF /* SceneDelegate.swift */,
-				F46063D52916770100F15CDF /* ViewController.swift */,
-				F46063D72916770100F15CDF /* Main.storyboard */,
+				F46063E5291739E000F15CDF /* ViewControllers */,
+				F46063E629173A0200F15CDF /* Storyboards */,
+				F46063E729173A2200F15CDF /* SupportFiles */,
 				F46063DA2916770400F15CDF /* Assets.xcassets */,
-				F46063DC2916770400F15CDF /* LaunchScreen.storyboard */,
 				F46063DF2916770400F15CDF /* Info.plist */,
 			);
 			path = LoginApp;
+			sourceTree = "<group>";
+		};
+		F46063E5291739E000F15CDF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F46063D52916770100F15CDF /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F46063E629173A0200F15CDF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F46063D72916770100F15CDF /* Main.storyboard */,
+				F46063DC2916770400F15CDF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F46063E729173A2200F15CDF /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F46063D12916770100F15CDF /* AppDelegate.swift */,
+				F46063D32916770100F15CDF /* SceneDelegate.swift */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F46063D62916770100F15CDF /* ViewController.swift in Sources */,
+				F46063D62916770100F15CDF /* LoginViewController.swift in Sources */,
 				F46063D22916770100F15CDF /* AppDelegate.swift in Sources */,
 				F46063D42916770100F15CDF /* SceneDelegate.swift in Sources */,
 			);
