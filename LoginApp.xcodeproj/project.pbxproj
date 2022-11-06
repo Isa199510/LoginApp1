@@ -13,6 +13,8 @@
 		F46063D92916770100F15CDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46063D72916770100F15CDF /* Main.storyboard */; };
 		F46063DB2916770400F15CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46063DA2916770400F15CDF /* Assets.xcassets */; };
 		F46063DE2916770400F15CDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46063DC2916770400F15CDF /* LaunchScreen.storyboard */; };
+		F46063E92917438700F15CDF /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46063E82917438700F15CDF /* UserViewController.swift */; };
+		F46063EC29176F8000F15CDF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46063EB29176F8000F15CDF /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F46063DA2916770400F15CDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F46063DD2916770400F15CDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F46063DF2916770400F15CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F46063E82917438700F15CDF /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserViewController.swift; path = LoginApp/ViewControllers/UserViewController.swift; sourceTree = SOURCE_ROOT; };
+		F46063EB29176F8000F15CDF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 				F46063E729173A2200F15CDF /* SupportFiles */,
 				F46063DA2916770400F15CDF /* Assets.xcassets */,
 				F46063DF2916770400F15CDF /* Info.plist */,
+				F46063EA29176D2D00F15CDF /* Model */,
 			);
 			path = LoginApp;
 			sourceTree = "<group>";
@@ -69,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				F46063D52916770100F15CDF /* LoginViewController.swift */,
+				F46063E82917438700F15CDF /* UserViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -89,6 +95,14 @@
 				F46063D32916770100F15CDF /* SceneDelegate.swift */,
 			);
 			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		F46063EA29176D2D00F15CDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F46063EB29176F8000F15CDF /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F46063D62916770100F15CDF /* LoginViewController.swift in Sources */,
+				F46063E92917438700F15CDF /* UserViewController.swift in Sources */,
 				F46063D22916770100F15CDF /* AppDelegate.swift in Sources */,
+				F46063EC29176F8000F15CDF /* User.swift in Sources */,
 				F46063D42916770100F15CDF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
