@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4298661291820050072D123 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4298660291820050072D123 /* TabBarController.swift */; };
+		F4298663291821E30072D123 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4298662291821E30072D123 /* InfoViewController.swift */; };
+		F4298665291928AD0072D123 /* avatar.JPEG in Resources */ = {isa = PBXBuildFile; fileRef = F4298664291928AD0072D123 /* avatar.JPEG */; };
+		F4298667291936290072D123 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4298666291936290072D123 /* UserViewController.swift */; };
 		F46063D22916770100F15CDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46063D12916770100F15CDF /* AppDelegate.swift */; };
 		F46063D42916770100F15CDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46063D32916770100F15CDF /* SceneDelegate.swift */; };
 		F46063D62916770100F15CDF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46063D52916770100F15CDF /* LoginViewController.swift */; };
 		F46063D92916770100F15CDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46063D72916770100F15CDF /* Main.storyboard */; };
 		F46063DB2916770400F15CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46063DA2916770400F15CDF /* Assets.xcassets */; };
 		F46063DE2916770400F15CDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46063DC2916770400F15CDF /* LaunchScreen.storyboard */; };
-		F46063E92917438700F15CDF /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46063E82917438700F15CDF /* UserViewController.swift */; };
+		F46063E92917438700F15CDF /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46063E82917438700F15CDF /* WelcomeViewController.swift */; };
 		F46063EC29176F8000F15CDF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46063EB29176F8000F15CDF /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F4298660291820050072D123 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = LoginApp/ViewControllers/TabBarController.swift; sourceTree = SOURCE_ROOT; };
+		F4298662291821E30072D123 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = LoginApp/ViewControllers/InfoViewController.swift; sourceTree = SOURCE_ROOT; };
+		F4298664291928AD0072D123 /* avatar.JPEG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = avatar.JPEG; path = ../../../../../../../Downloads/avatar.JPEG; sourceTree = "<group>"; };
+		F4298666291936290072D123 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserViewController.swift; path = LoginApp/ViewControllers/UserViewController.swift; sourceTree = SOURCE_ROOT; };
 		F46063CE2916770100F15CDF /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46063D12916770100F15CDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F46063D32916770100F15CDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,7 +34,7 @@
 		F46063DA2916770400F15CDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F46063DD2916770400F15CDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F46063DF2916770400F15CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F46063E82917438700F15CDF /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserViewController.swift; path = LoginApp/ViewControllers/UserViewController.swift; sourceTree = SOURCE_ROOT; };
+		F46063E82917438700F15CDF /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = LoginApp/ViewControllers/WelcomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		F46063EB29176F8000F15CDF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,8 +81,11 @@
 		F46063E5291739E000F15CDF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F4298660291820050072D123 /* TabBarController.swift */,
 				F46063D52916770100F15CDF /* LoginViewController.swift */,
-				F46063E82917438700F15CDF /* UserViewController.swift */,
+				F46063E82917438700F15CDF /* WelcomeViewController.swift */,
+				F4298666291936290072D123 /* UserViewController.swift */,
+				F4298662291821E30072D123 /* InfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -101,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				F46063EB29176F8000F15CDF /* User.swift */,
+				F4298664291928AD0072D123 /* avatar.JPEG */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F46063DE2916770400F15CDF /* LaunchScreen.storyboard in Resources */,
+				F4298665291928AD0072D123 /* avatar.JPEG in Resources */,
 				F46063DB2916770400F15CDF /* Assets.xcassets in Resources */,
 				F46063D92916770100F15CDF /* Main.storyboard in Resources */,
 			);
@@ -177,8 +190,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F46063D62916770100F15CDF /* LoginViewController.swift in Sources */,
-				F46063E92917438700F15CDF /* UserViewController.swift in Sources */,
+				F4298667291936290072D123 /* UserViewController.swift in Sources */,
+				F46063E92917438700F15CDF /* WelcomeViewController.swift in Sources */,
 				F46063D22916770100F15CDF /* AppDelegate.swift in Sources */,
+				F4298663291821E30072D123 /* InfoViewController.swift in Sources */,
+				F4298661291820050072D123 /* TabBarController.swift in Sources */,
 				F46063EC29176F8000F15CDF /* User.swift in Sources */,
 				F46063D42916770100F15CDF /* SceneDelegate.swift in Sources */,
 			);

@@ -8,13 +8,13 @@
 import Foundation
 
 struct User {
-    let userName: String
+    let login: String
     let password: String
     let person: Person
     
     static func getUserData() -> User {
         User(
-            userName: "Isa",
+            login: "Isa",
             password: "2022",
             person: Person.getPerson()
         )
@@ -25,10 +25,12 @@ struct Person {
     let name: String
     let surname: String
     var hobbies: [Hobbies]
-    
+    var biography: String
     var fullname: String {
         "\(name) \(surname)"
     }
+    
+    
     func getHobby() -> String {
         var hobbyString: [String] = []
         for item in hobbies {
@@ -40,9 +42,12 @@ struct Person {
         Person(
             name: "Иса",
             surname: "Арбухов",
-            hobbies: [.higherMathematics, .programming]
+            hobbies: [.higherMathematics, .programming],
+            biography: """
+"""
         )
     }
+    
     
 }
 

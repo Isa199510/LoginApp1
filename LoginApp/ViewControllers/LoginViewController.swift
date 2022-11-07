@@ -34,7 +34,7 @@ class LoginViewController: UIViewController {
         guard let tabBarVCs = userTabBarController.viewControllers else { return }
 
         tabBarVCs.forEach { ViewController in
-            if let userVC = ViewController as? UserViewController {
+            if let userVC = ViewController as? WelcomeViewController {
                 userVC.welcome = userName
             }
         }

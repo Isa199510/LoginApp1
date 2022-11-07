@@ -2,33 +2,28 @@
 //  UserViewController.swift
 //  LoginApp
 //
-//  Created by Иса on 06.11.2022.
+//  Created by Иса on 07.11.2022.
 //
 
 import UIKit
 
 class UserViewController: UIViewController {
-
     
-    @IBOutlet var welcomeLabel: UILabel!
+    @IBOutlet var imageUserOutlet: UIImageView!
     
-    var welcome = ""
+    @IBOutlet var surnameLabelOutlet: UILabel!
+    @IBOutlet var nameLabelOutlet: UILabel!
+    @IBOutlet var hobbyLabelOutlet: UILabel!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeLabel.text = "Welcome, \(welcome)"
-        print(welcome)
+        
+        imageUserOutlet.layer.cornerRadius = imageUserOutlet.frame.width / 2
+
+        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
