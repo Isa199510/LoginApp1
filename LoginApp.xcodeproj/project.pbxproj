@@ -36,6 +36,7 @@
 		F46063DF2916770400F15CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F46063E82917438700F15CDF /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = LoginApp/ViewControllers/WelcomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		F46063EB29176F8000F15CDF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F4AD2F08291A785200B5E0B1 /* avatar.JPEG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.JPEG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 				F46063E629173A0200F15CDF /* Storyboards */,
 				F46063E729173A2200F15CDF /* SupportFiles */,
 				F46063DA2916770400F15CDF /* Assets.xcassets */,
+				F4AD2F08291A785200B5E0B1 /* avatar.JPEG */,
 				F46063DF2916770400F15CDF /* Info.plist */,
 				F46063EA29176D2D00F15CDF /* Model */,
 			);

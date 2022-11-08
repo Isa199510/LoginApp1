@@ -13,8 +13,10 @@ class LoginViewController: UIViewController {
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    private let userName = "User"
-    private let password = "Password"
+//    private let userName = "User"
+//    private let password = "Password"
+    
+    var user: User = .getUserData()
     
     
     
@@ -34,8 +36,15 @@ class LoginViewController: UIViewController {
         guard let tabBarVCs = userTabBarController.viewControllers else { return }
 
         tabBarVCs.forEach { ViewController in
-            if let userVC = ViewController as? WelcomeViewController {
-                userVC.welcome = userName
+            if let welcomeVC = ViewController as? WelcomeViewController {
+                welcomeVC.welcome = user.person.name
+            } else if let navigationVC = ViewController as? UINavigationController {
+                guard let userVC = navigationVC.topViewController  as? UserViewController else { return }
+                userVC.title = user.person.name
+                userVC.surname = user.person.surname
+                userVC.name = user.person.name
+                userVC.hobby = user.person.getHobby()
+                
             }
         }
     }
@@ -48,7 +57,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func logInPressed() {
-        guard userNameTextField.text == userName, passwordTextField.text == password else {
+        guard userNameTextField.text == user.login, passwordTextField.text == user.password else {
             showAlert(
                 title: "Неправильный логин или пароль",
                 message: "Пожалуйста, введите логин и пароль",
@@ -61,8 +70,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func forgotPressed(_ sender: UIButton) {
         sender.tag == 0 ?
-        showAlert(title: "Упс!", message: "Ваш логин \(userName)") :
-        showAlert(title: "Упс!", message: "Ваш пароль \(password)")
+        showAlert(title: "Упс!", message: "Ваш логин \(user.login)") :
+        showAlert(title: "Упс!", message: "Ваш пароль \(user.password)")
     }
     
     private func showAlert(title: String, message: String, textField: UITextField? = nil) {

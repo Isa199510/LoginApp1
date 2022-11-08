@@ -15,14 +15,18 @@ class UserViewController: UIViewController {
     @IBOutlet var nameLabelOutlet: UILabel!
     @IBOutlet var hobbyLabelOutlet: UILabel!
     
-    
+    var surname = ""
+    var name = ""
+    var hobby = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         imageUserOutlet.layer.cornerRadius = imageUserOutlet.frame.width / 2
-
-        // Do any additional setup after loading the view.
+        surnameLabelOutlet.text = surname
+        nameLabelOutlet.text = name
+        hobbyLabelOutlet.text = hobby
+        
     }
     
 
